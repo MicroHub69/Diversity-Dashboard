@@ -1,3 +1,5 @@
+@media(min-width: 1220px){
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +9,9 @@
     font-family: 'Nunito', sans-serif;
     font-family: 'Nunito Sans', sans-serif;
 }
+
+
+
 .flex-wrap{
     display: flex;
 }
@@ -168,9 +173,8 @@ nav h2{
 }
 .doughnut h1{
     position: absolute;
-    /* top: 25%;
-    left: 25% */
-    transform: translate(60%,120%);
+    top: 25%;
+    transform: translate(60%,50%);
 }
 .doughnut p{
     margin: 50px 20px;
@@ -277,4 +281,6 @@ nav h2{
     background-color: white;
     color:  #AC557D;
     font-weight: 800;
+}
+
 }
