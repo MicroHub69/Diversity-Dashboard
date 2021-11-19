@@ -10,7 +10,7 @@
 }
 
 body{
-    max-width: 1320px;
+    max-width: 1400px;
 }
 
 .flex-wrap{
@@ -147,9 +147,9 @@ nav h2{
     height: 30px;
     object-fit: cover;
 }
-/* .container{
+.container{
     width: 100%;
-} */
+}
 
 /* TABLE AND CHART */
 .chart{
