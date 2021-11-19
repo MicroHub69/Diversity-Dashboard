@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.flex-wrap{
+    display: flex;
+}
+section{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.logo{
+    margin-top: 25px;
+    margin-bottom: 65px;
+}
+
+.list{
+    text-align: left;
+    position: relative;
+}
+
+.list li{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 23px 80px;
+    cursor: pointer;
+    position: relative;
+    background-color: #242323;
+    margin: 10px 0px;
+    vertical-align: middle;
+}
+.pink{
+    background-color: #9E4E73;
+    width: 24px;
+    height: 72px;
+    left: 0;
+    top: 0;
+    border-radius: 0px 10px 10px 0;
+    position: absolute;
+}
+.view{
+    position: absolute;
+    top: 18px;
+    left: 40px;
+}
+.tabs{
+    text-align: center;
+    width: 250px;
+    height: 1024px;
+}
+
+
+/* BOX */
+.box-wrap{
+    margin-top: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    text-align: center;
+    width: 216px;
+    border-radius: 10px;
+    height: 217px;
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #EEEEEE;
+}
+.box p{
+    font-size: 15px;
+    font-weight: 800;
+    padding: 5px 35px;
+}
+.box img{
+    position: relative;
+    margin-top: -40px;
+    width: 163px;
+    height: 120px;
+}
+.box button{
+    width: 70%;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #00838F;
+    margin: 10px 15px;
+}
+
+/* NAVBAR */
+nav{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   padding: 25px 40px;
+   height: 90px;
+   background-color: #fff;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 10px;
+   
+}
+.input{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.input input{
+    width: 320px;
+    height: 45px;
+    background: #fff;
+    outline: 0;
+    border: 1px solid rgba(51, 51, 51, 0.15);
+    padding: 15px;
+    position: relative;
+    border-radius: 22.5px;
+}
+.margin-t{
+    margin-top: 10px;
+}
+.search-btn{
+    position: absolute;
+    right: 220px;
+    top: 35px;
+    cursor: pointer;
+}
+nav h2{
+    font-size: 28px;
+    font-weight: 800;
+}
+.input img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.container{
+    width: 100%;
+}
+
+/* TABLE AND CHART */
+.chart{
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.d_wrap{
+    width: 335px;
+    height: 170px;
+    padding: 7px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 10px;
+}
+.doughnut{
+    width: 145px;
+    position: relative;
+    height: 145px;
+    /* background-color: yellowgreen; */
+    display: flex;
+}
+.doughnut h1{
+    position: absolute;
+    /* top: 25%;
+    left: 25% */
+    transform: translate(60%,120%);
+}
+.doughnut p{
+    margin: 50px 20px;
+   font-size: 20px;
+   font-weight: 700;
+}
+.doughnut span{
+   font-size: 20px;
+   font-weight: 500;
+}
+
+
+
+/* TABLE */
+.table {
+    background-color: white;
+    font-size: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 10px;
+    margin: 10px 40px;
+  }
+  .head{
+    border-radius: 10px 10px 0 0;
+  }
+  td{
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  table th:first-child{
+    border-radius:10px 0 0 0px;
+  }
+  
+  table th:last-child{
+    border-radius:0 10px 0px 0;
+  }
+
+
+  th{
+    padding: 10px 20px;
+  }
+  .head{
+     border-radius: 10px;
+  }
+  table {
+    /* table-layout: fixed; */
+    text-align: left;
+    border-collapse: collapse;
+  }
+  thead {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+  }
+  thead th:nth-child(1) {
+    width: 25%;
+  }
+  thead th:nth-child(2) {
+    width: 25%;
+  }
+  thead th:nth-child(3) {
+    width: 25%;
+  }
+  thead th:nth-child(4) {
+    width: 20%;
+  }
+
+
+.go_right{
+    width: 93%;
+    padding: 15px 60px;
+    height: 240px;
+    border-radius: 10px;
+    background: #242323;
+    position: relative;
+    margin: 50px 40px;
+}
+
+.go_right h1{
+    font-size: 45px;
+    font-weight: 800;
+    color: #EEEEEE;
+}
+
+.go_right p{
+    padding-right: 530px;
+    font-size: 15px;
+    font-weight: 800;
+    color:#EEEEEE;
+}
+.go_right img{
+    width: 240px;
+    position: absolute;
+    right: 0;
+    top: -25px;
+}
+.go_right button{
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 15px;
+    border: 0;
+    margin-top: 30px;
+    background-color: white;
+    color:  #AC557D;
+    font-weight: 800;
+}

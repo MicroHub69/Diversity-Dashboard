@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700;1,800&family=Nunito:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+</head>
+<body>
+    <div class="flex-wrap">
+        <section class="tabs">
+            <img src="images/Instincthub logo.png" class="logo">
+
+            <ul class="list">
+                <li><div class="pink"></div><img src="images/bx_bxs-dashboard.png" class="view">Overview</li>
+                <li><div></div><img src="images/akar-icons_file.png" class="view">Classes</li>
+                <li><div></div><img src="images/codicon_graph.png" class="view">Analysis</li>
+                <li><div></div><img src="images/ic_baseline-group.png" class="view">Community</li>
+                <li><div></div><img src="images/fe_logout.png" class="view">Log Out</li>
+            </ul>
+
+
+            <div class="box-wrap">
+                <div class="box">
+                    <img src="images/Box.png">
+                    <p>Upgrade your student portal account</p>
+                    <button>Upgrade</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN CONTAINER -->
+        <div class="container">
+            <nav>
+                <h2>My Course Dashboard</h2>
+
+                <div class="input">
+                    <input type="text" placeholder="You're looking for ...">
+                    <img src="images/bx_bx-search.png" class="search-btn">
+                    <img src="images/codicon_bell-dot.png" class="margin-t">
+                    <img src="images/User-profile.png" class="margin-t">
+                </div>
+            </nav>
+
+            <div class="chart">
+                <div class="d_wrap">
+                    <div class="doughnut">
+                        <canvas id="daily" width="100" height="100"
+                            style="display: block; box-sizing: border-box; height: 447px; width: 447px;">
+                        </canvas>
+
+                        <h1>70%</h1>
+
+                        <p>Daily<span> Activities</span></p>
+                    </div>
+                </div>
+
+                <div class="d_wrap">
+                    <div class="doughnut">
+                        <canvas id="monthly" width="100" height="100"
+                            style="display: block; box-sizing: border-box; height: 447px; width: 447px;">
+                        </canvas>
+
+                        <h1>20%</h1>
+
+                        <p>Monthly<span> Activities</span></p>
+                    </div>
+                </div>
+                
+                <div class="d_wrap">
+                    <div class="doughnut">
+                        <canvas id="yearly"></canvas>
+                        <h1>12%</h1>
+                        <p>Yearly<span> Activities</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table">
+                <table>
+                    <thead class="head">
+                        <th>No</th>
+                        <th>Course Name</th>
+                        <th>Department</th>
+                        <th>Units</th>
+                        <th>Gpa</th>
+                    </thead>
+
+                    <tr>
+                        <td>0</td>
+                        <td>Tax Academy Introduction</td>
+                        <td>Finances</td>
+                        <td>3</td>
+                        <td>4.3/5</td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Transfer Pricing</td>
+                        <td>Customer Service</td>
+                        <td>3</td>
+                        <td>4.3/5</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Tax Academy for Beginners</td>
+                        <td>Purchasing</td>
+                        <td>3</td>
+                        <td>4.3/5</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>3</td>
+                        <td>New Business</td>
+                        <td>Finances</td>
+                        <td>3</td>
+                        <td>3.0/5</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Tax Accounting</td>
+                        <td>Administration</td>
+                        <td>8</td>
+                        <td>4.7/5</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Motion Design</td>
+                        <td>IT Dep</td>
+                        <td>6</td>
+                        <td>4.4/5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>3D Modeling</td>
+                        <td>IT Dep</td>
+                        <td>3</td>
+                        <td>3.0/5</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Brand Strategy on Instagram</td>
+                        <td>Marketing</td>
+                        <td>3</td>
+                        <td>4.7/5</td>
+                    </tr>
+                </table>
+            </div>
+        
+            <section class="go_right">
+                <h1>When nothing goes right,go left</h1>
+                <p>Build your skills with courses and degree online from anywhere with professional instructors.</p>
+                <button>Learn More</button>
+                <img src="images/smile.png" alt="">
+        </section>
+        </div> <!-- MAIN CONTAINER ENDS-->
+
+        
+    </div>
+
+    
+
+
+<!--==============
+Javascript-files
+==================-->
+
+<script src="daily.js"></script>
+<script src="monthly.js"></script>
+<script src="yearly.js"></script>
+
+     
+</body>
+</html>
