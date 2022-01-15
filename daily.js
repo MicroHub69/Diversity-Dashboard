@@ -1,16 +1,19 @@
+
 var ctx = document.getElementById('daily').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-datasets: [{
-    label: 'My DASHBOARD',
-    data: [300, 100],
-    backgroundColor: [
-    '#AC557D',
-    '#00838F'
-    ],
-    hoverOffset: 4,
-    cutout: '85%'
-    }]
+        datasets: [{
+            label: 'MY DASHBOARD',
+            data: [30, 19],
+            backgroundColor: [
+              '#AC557D',
+              '#00838F'
+            ],
+            borderWidth: 0,
+            borderRadius: "3",
+            cutout: "85%"
+        }]
     },
+
 });
