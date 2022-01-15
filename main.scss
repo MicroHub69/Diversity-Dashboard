@@ -1,0 +1,121 @@
+@import "./variable";
+@import "./customs";
+@import "./ipad";
+@import "./tablet";
+@import "./navs";
+
+.container {
+  padding: 0 15px;
+}
+
+.banner {
+  .easy {
+    margin-top: 150px;
+    h1 {
+      font-size: 39px;
+      line-height: 62px;
+    }
+    .inputs_submit {
+      button {
+        color: $white;
+        background-color: $blue;
+        width: 13%;
+        height: 52px;
+      }
+    }
+  }
+  img {
+    margin-top: 30px;
+  }
+  input {
+    width: 70%;
+    &::placeholder {
+      color: $headings;
+    }
+  }
+}
+
+.bills {
+  margin-top: 70px;
+  small {
+    @include small($b-gradient, $blue);
+  }
+  h1 {
+    font-size: 35px;
+    line-height: 53px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  img {
+    margin-top: 30px;
+  }
+}
+
+.notify {
+  margin-top: 70px;
+
+  small {
+    @include small($o-gradient, $orange);
+  }
+  h1 {
+    font-size: 35px;
+    line-height: 53px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  img {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 0;
+  }
+  header nav img {
+    width: 157px;
+    height: 54px;
+  }
+}
+
+@media (min-width: 768px) {
+  .content-max {
+    max-width: 350px;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+  .bills {
+    @include flexbox(space-between, row-reverse);
+    img {
+      margin-top: 30px;
+      width: 400px;
+    }
+  }
+  .notify {
+    @include flexbox(space-between, row);
+    img {
+      margin-top: 30px;
+      width: 400px;
+    }
+  }
+  .banner {
+    @include flexbox(space-between, row);
+  }
+  .banner img {
+    margin-top: 120px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-max {
+    max-width: 420px;
+  }
+  .bills img,
+  .banner img,
+  .notify img {
+    width: 620px;
+  }
+}

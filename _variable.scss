@@ -1,0 +1,34 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+@mixin flexbox($justify, $direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+  width: 100%;
+}
+@mixin small($background, $color) {
+  background-color: $background;
+  color: $color;
+  border-radius: 50px;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+$headings: gray;
+$p-tags: #fff;
+$white: #fff;
+$orange: #ba4238;
+$b-gradient: #d8ddff;
+$o-gradient: #fbe8e1;
+$blue: #2337b8;
+$purple: #642d92;
+$p-gradient: #e8dfef;
